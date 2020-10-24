@@ -1,0 +1,8 @@
+<div class="row justify-content-between">
+    <div *ngFor="let point of Answer" class="col-auto">
+        <app-point [Point]="point"></app-point>
+    </div>
+    <div class="col-auto">
+        <button disabled>Guess</button>
+    </div>
+</div>

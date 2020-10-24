@@ -5,11 +5,19 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { GameComponent } from './pages/game/game.component';
+import { BoardComponent } from './comps/board/board.component';
+import { GuessrowComponent } from './comps/guessrow/guessrow.component';
+import { PointComponent } from './comps/point/point.component';
+import { AnswerrowComponent } from './comps/answerrow/answerrow.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    GameComponent
+    GameComponent,
+    BoardComponent,
+    GuessrowComponent,
+    PointComponent,
+    AnswerrowComponent,
   ],
   imports: [
     BrowserModule,

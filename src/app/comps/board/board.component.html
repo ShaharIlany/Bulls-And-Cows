@@ -1,0 +1,4 @@
+<div class="board">
+    <!--app-answerrow [Answer]="board.Answer"></app-answerrow-->
+    <app-guessrow *ngFor="let GuessRow of board.GuessPoints; let i = index" [GuessRow]="GuessRow" [Board]="board" [Index]="i"></app-guessrow>
+</div>

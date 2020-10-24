@@ -1,0 +1,9 @@
+<div class="row justify-content-between">
+    <div *ngFor="let point of GuessRow" class="col-auto">
+        <app-point [Point]="point" [Board]="Board" [RowIndex]="Index"></app-point>
+    </div>
+    <div class="col-auto">
+        <button [disabled]="buttonStatus()" (click)="guessClick()">Guess</button>
+    </div>
+    
+</div>
